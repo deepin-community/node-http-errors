@@ -1,0 +1,37 @@
+Source: node-http-errors
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-buildinfo
+ , mocha <!nocheck>
+ , node-depd (>= 1.1.2~)
+ , node-inherits (>= 2.0.3~)
+ , node-setprototypeof
+ , node-statuses
+ , node-toidentifier
+ , dh-sequence-nodejs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-http-errors
+Vcs-Git: https://salsa.debian.org/js-team/node-http-errors.git
+Homepage: https://github.com/jshttp/http-errors#readme
+Rules-Requires-Root: no
+
+Package: node-http-errors
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-depd (>= 1.1.2~)
+ , node-inherits (>= 2.0.3~)
+ , node-setprototypeof
+ , node-statuses
+ , node-toidentifier
+ , nodejs
+Description: Create HTTP error objects
+ This modules allow you to create HTTP errors for Express, Koa, Connect, etc.
+ with ease.
+ .
+ Node.js is an event-based server-side JavaScript engine.

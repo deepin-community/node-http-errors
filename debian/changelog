@@ -1,0 +1,57 @@
+node-http-errors (1.8.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs
+  * New upstream version 1.8.0
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 23 Dec 2020 17:02:39 +0100
+
+node-http-errors (1.7.3-1) unstable; urgency=medium
+
+  * Team Upload
+
+  [ Abraham Raji ]
+  * New upstream version 1.7.3
+  * Bumped standards version to 4.5.0
+  * Changed install path to usr/share/ in debian/install
+  * Changed to debhelper-compat and bumped version to 12
+  * Added Upstream Metadata
+  * No root required
+
+  [ Xavier Guimard ]
+  * Drop unneeded version constraints from (build) dependencies
+  * Use pkg-js-tools auto test & install
+
+ -- Abraham Raji <avronr@tuta.io>  Fri, 03 Apr 2020 22:16:47 +0000
+
+node-http-errors (1.7.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version: Fix FTBFS with newer nodejs
+  * Bump standard version (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 15 Nov 2018 00:05:02 +0100
+
+node-http-errors (1.7.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version (Closes: #905749)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 08 Aug 2018 15:40:11 +0200
+
+node-http-errors (1.6.3-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Bump policy and standard version.
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 20 Jun 2018 22:26:44 +0200
+
+node-http-errors (1.6.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #874154)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 03 Sep 2017 21:54:35 +0530
