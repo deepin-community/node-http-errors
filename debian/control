@@ -1,35 +1,32 @@
 Source: node-http-errors
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
-Build-Depends:
- debhelper-compat (= 13)
- , dh-buildinfo
- , mocha <!nocheck>
- , node-depd (>= 1.1.2~)
- , node-inherits (>= 2.0.3~)
- , node-setprototypeof
- , node-statuses
- , node-toidentifier
+Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
-Standards-Version: 4.5.1
+ , mocha <!nocheck>
+ , node-depd <!nocheck>
+ , node-inherits <!nocheck>
+ , node-setprototypeof <!nocheck>
+ , node-statuses (>= 2) <!nocheck>
+ , node-toidentifier <!nocheck>
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-http-errors
 Vcs-Git: https://salsa.debian.org/js-team/node-http-errors.git
-Homepage: https://github.com/jshttp/http-errors#readme
+Homepage: https://github.com/jshttp/http-errors
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-http-errors
 Architecture: all
-Depends:
- ${misc:Depends}
- , node-depd (>= 1.1.2~)
- , node-inherits (>= 2.0.3~)
+Depends: ${misc:Depends}
+ , node-depd
+ , node-inherits
  , node-setprototypeof
- , node-statuses
+ , node-statuses (>= 2)
  , node-toidentifier
- , nodejs
+Provides: ${nodejs:Provides}
 Description: Create HTTP error objects
  This modules allow you to create HTTP errors for Express, Koa, Connect, etc.
  with ease.
